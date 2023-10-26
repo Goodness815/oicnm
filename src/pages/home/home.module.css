@@ -53,3 +53,29 @@
   flex-wrap: wrap;
   margin: 50px 0px;
 }
+
+@media screen and (max-width: 1000px) {
+  .home_big_flex {
+    display: none;
+  }
+  .home_hero h1 {
+    font-size: 35px;
+    line-height: 45px;
+  }
+}
+@media screen and (max-width: 725px) {
+  .home_small_flex {
+    justify-content: space-evenly;
+    margin-top: 0px;
+    margin-bottom: 50px;
+  }
+  .home_hero {
+    max-width: 400px;
+    padding: 60px 0px;
+  }
+  .home_hero h1 {
+    font-size: 24px;
+    line-height: 30px;
+    margin-top: 10px;
+  }
+}
