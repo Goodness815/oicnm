@@ -1,0 +1,65 @@
+.president_container {
+  background: #f4f9ec;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 50px 0px;
+  margin-top: 30px;
+}
+.president_inner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+  padding: 100px 0px;
+  gap: 20px;
+}
+.president_left {
+  width: 430px;
+}
+.president_img_case {
+  position: relative;
+  width: 200px;
+  height: 430px;
+  background-color: var(--darkgreen);
+}
+.president_img_case img {
+  position: absolute;
+  width: 350px;
+  height: 430px;
+  bottom: -30px;
+  right: -200px;
+  object-fit: cover;
+  object-position: center;
+}
+.president_right {
+  max-width: 600px;
+}
+.president_right span {
+  color: var(--darkgreen);
+  font-family: var(--font);
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 24px; /* 150% */
+  letter-spacing: 0.84px;
+  text-transform: uppercase;
+}
+.president_right h2 {
+  font-family: var(--font);
+  color: #002313;
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 38.4px; /* 120% */
+  letter-spacing: -0.64px;
+  margin-top: 20px;
+}
+.president_right p {
+  font-family: var(--font);
+  color: #5a5a5a;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: -0.36px;
+  margin-top: 10px;
+  max-width: 90%;
+}

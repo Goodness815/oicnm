@@ -5,6 +5,7 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 #root {
   --font: "Be Vietnam Pro", serif;
   --lightgreen: #8dc63f;
