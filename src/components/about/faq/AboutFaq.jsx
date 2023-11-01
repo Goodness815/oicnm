@@ -41,8 +41,10 @@ function AboutFaq() {
 
   return (
     <div className={styles.faq_container}>
-      <span>Faq</span>
-      <h2>The OICNM FAQs</h2>
+      <span data-aos="zoom-in">Faq</span>
+      <h2 data-aos="fade-up" data-aos-duration="2000">
+        The OICNM FAQs
+      </h2>
       <div className={styles.faq_main}>
         <Faq data={data} />
       </div>

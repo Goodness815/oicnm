@@ -63,3 +63,33 @@
   line-height: 25px; /* 177.778% */
   margin-top: 20px;
 }
+.facility_item_last {
+  width: 50%;
+}
+@media screen and (max-width: 936px) {
+  .facility_item_right {
+    align-items: center;
+  }
+  .facility_item {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .facility_item h4 {
+    text-align: center;
+  }
+  .facility_container h2 {
+    font-size: 25px;
+  }
+  .facility_container p {
+    text-align: center;
+    font-size: 14px;
+  }
+  .facility_item_last {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}

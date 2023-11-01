@@ -32,3 +32,19 @@
   border-radius: 8px;
 }
 
+@media screen and (max-width: 900px) {
+  .faq_container span {
+    font-size: 14px;
+  }
+  .faq_container h2 {
+    font-size: 25px;
+  }
+
+  .faq_main {
+    margin-top: 30px;
+    max-width: 80%;
+    padding: 40px;
+    background-color: white;
+    border-radius: 8px;
+  }
+}

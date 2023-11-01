@@ -67,3 +67,25 @@
   line-height: 24px; /* 171.429% */
   letter-spacing: -0.24px;
 }
+
+@media screen and (max-width: 1000px) {
+  .footer_top {
+    flex-wrap: wrap;
+  }
+  .footer_top ul {
+    margin-top: 20px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .footer_top {
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  .footer_top ul {
+    width: 100%;
+    margin-top: 30px;
+  }
+  .footer_bottom span {
+    text-align: center;
+  }
+}

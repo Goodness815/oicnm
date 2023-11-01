@@ -87,7 +87,7 @@ function Blog({ home }) {
         <div
           style={
             home && {
-              width: "80%",
+              width: "100%",
               justifyContent: "space-evenly",
               margin: "10px 0px",
             }

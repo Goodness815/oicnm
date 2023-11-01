@@ -9,6 +9,11 @@ import Nav from "./components/nav";
 import Footer from "./components/footer/Footer";
 import About from "./pages/about";
 
+import AOS from 'aos';
+import 'aos/dist/aos.css'; // You can also use <link> for styles
+// ..
+AOS.init();
+
 function App() {
   return (
     <>

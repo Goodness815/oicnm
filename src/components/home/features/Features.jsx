@@ -43,7 +43,11 @@ function Features() {
         </div>
       </div>
       <div className={styles.features_bottom}>
-        <div className={styles.features_bottom_left}>
+        <div
+          className={styles.features_bottom_left}
+          data-aos="fade-up"
+          data-aos-duration="2000"
+        >
           <h2>We Have the Most Flexible Learning Experience on the Planet</h2>
           <ul>
             <li>
@@ -67,8 +71,16 @@ function Features() {
           <button>Apply to a Program</button>
         </div>
         <div className={styles.features_bottom_right}>
-          <img className={styles.features_bottom_left_img} src={bottomleft} alt="" />
-          <img className={styles.features_bottom_right_img} src={bottomright} alt="" />
+          <img
+            className={styles.features_bottom_left_img}
+            src={bottomleft}
+            alt=""
+          />
+          <img
+            className={styles.features_bottom_right_img}
+            src={bottomright}
+            alt=""
+          />
         </div>
       </div>
     </div>

@@ -63,3 +63,19 @@
   margin-top: 10px;
   max-width: 80%;
 }
+
+@media screen and (max-width: 900px) {
+  .values_container {
+    padding-top: 50px;
+  }
+  .values_container h4 {
+    font-size: 14px;
+  }
+  .values_container h2 {
+    font-size: 25px;
+    max-width: 330px;
+  }
+  .values_inner_item h2 {
+    font-size: 18px;
+  }
+}

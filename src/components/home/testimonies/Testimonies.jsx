@@ -17,7 +17,11 @@ function Testimonies() {
               <img src={testimage} alt="image of a girl" />
             </div>
           </div>
-          <div className={styles.reviews_right}>
+          <div
+            className={styles.reviews_right}
+            data-aos="fade-up"
+            data-aos-duration="2000"
+          >
             <QuoteIcon />
             <p>
               My experience while studying at OICNM was an amazing one. It was a

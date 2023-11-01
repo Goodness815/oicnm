@@ -63,3 +63,46 @@
   margin-top: 10px;
   max-width: 90%;
 }
+
+@media screen and (max-width: 1270px) {
+  .president_inner {
+    width: 90%;
+  }
+  .president_right {
+    max-width: 500px;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .president_inner {
+    flex-direction: column-reverse;
+  }
+
+  .president_left {
+    margin-top: 40px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .president_inner {
+    padding: 50px 0px;
+  }
+  .president_right {
+    max-width: 100%;
+  }
+  .president_left {
+    width: 320px;
+  }
+  .president_img_case {
+    width: 120px;
+    height: 350px;
+  }
+  .president_img_case img {
+    width: 300px;
+    height: 350px;
+    bottom: -30px;
+    right: -200px;
+  }
+  .president_right h2 {
+    font-size: 25px;
+    margin-top: 30px;
+  }
+}

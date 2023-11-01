@@ -9,7 +9,11 @@ function President() {
             <img src={presidentimg} alt="" />
           </div>
         </div>
-        <div className={styles.president_right}>
+        <div
+          className={styles.president_right}
+          data-aos="fade-up"
+          data-aos-duration="2000"
+        >
           <span>FROM OUR PRESIDENT</span>
           <h2>Welcome to </h2>
           <p>Welcome to [Medical School Name] </p>

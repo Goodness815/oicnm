@@ -76,3 +76,14 @@
   line-height: 24px; /* 171.429% */
   letter-spacing: -0.28px;
 }
+@media screen and (max-width: 936px) {
+  .leadership_container span {
+    font-size: 14px;
+  }
+  .leadership_container h2 {
+    font-size: 25px;
+    line-height: 40px;
+    max-width: 350px;
+    margin: 10px 0px;
+  }
+}

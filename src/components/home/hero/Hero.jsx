@@ -7,7 +7,11 @@ function Hero() {
   return (
     <>
       <div className={styles.hero_container}>
-        <div className={styles.hero_inner}>
+        <div
+          className={styles.hero_inner}
+          data-aos="fade-up"
+          data-aos-duration="2000"
+        >
           <span>WELCOME TO OICNM</span>
           <h1>Excellence in Medical Learning</h1>
           <p>
@@ -88,7 +92,8 @@ function Hero() {
 
       <div className={styles.hero_flex_container}>
         <div className={styles.hero_flex_inner}>
-          <div className={styles.hero_flex_left}>
+          <div className={styles.hero_flex_left}  data-aos="fade-up"
+          data-aos-duration="2000">
             <h1>Open International College Of Naturopathic Medicine</h1>
             <p>
               Founded to provide up-to-date naturopathic medicine education for

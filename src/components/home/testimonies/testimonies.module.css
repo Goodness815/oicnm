@@ -94,3 +94,57 @@
   line-height: 20px; /* 177.778% */
   letter-spacing: -0.7px;
 }
+@media screen and (max-width: 900px) {
+  .reviews_left {
+    width: 350px;
+  }
+  .reviews_img_container {
+    width: 150px;
+  }
+  .reviews_img_container img {
+    width: 300px;
+    bottom: -40px;
+    right: -200px;
+  }
+  .reviews_right {
+    max-width: 300px;
+  }
+}
+@media screen and (max-width: 700px) {
+  .reviews_main {
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    padding-top: 50px;
+  }
+  .testimonies_inner {
+    width: 100%;
+  }
+  .testimonies_inner span {
+    font-size: 14px;
+  }
+  .testimonies_inner h2 {
+    font-size: 25px;
+    line-height: 36px;
+    max-width: 340px;
+  }
+  .reviews_right {
+    max-width: 80%;
+  }
+}
+@media screen and (max-width: 500px) {
+  .reviews_left {
+    width: 300px;
+  }
+  .reviews_img_container {
+    width: 100px;
+  }
+  .reviews_img_container img {
+    width: 250px;
+    bottom: -40px;
+    right: -200px;
+  }
+  .reviews_right {
+    max-width: 300px;
+  }
+}

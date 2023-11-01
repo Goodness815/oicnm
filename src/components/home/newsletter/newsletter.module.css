@@ -84,3 +84,44 @@
   letter-spacing: 0.3px;
   text-transform: uppercase;
 }
+@media screen and (max-width: 900px) {
+  .newsletter_left {
+    width: 40%;
+  }
+  .newsletter_right {
+    width: 60%;
+  }
+}
+@media screen and (max-width: 700px) {
+  .newsletter_container {
+    flex-direction: column;
+    margin-top: 200px;
+  }
+  .newsletter_left,
+  .newsletter_right {
+    width: 100%;
+  }
+  .newsletter_right {
+    padding: 180px 0px;
+  }
+  .newsletter_right_inner {
+    width: 90%;
+  }
+  .newsletter_right form input {
+    width: 90%;
+  }
+  .newsletter_right form {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .newsletter_right form button {
+    margin-top: 20px;
+  }
+  .newsletter_item {
+    font-size: 40px;
+  }
+  .newsletter_right_inner h3 {
+    font-size: 25px;
+    line-height: 32px;
+  }
+}

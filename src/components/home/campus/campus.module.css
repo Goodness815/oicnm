@@ -11,6 +11,7 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  width: 100%;
 }
 .campus_inner span {
   color: var(--darkgreen);
@@ -32,4 +33,23 @@
   line-height: 35px; /* 120% */
   letter-spacing: -0.8px;
   margin-top: 20px;
+}
+.youtube_frame {
+  width: 720px;
+}
+
+@media screen and (max-width: 700px) {
+  .campus_container {
+    margin-top: 145px;
+  }
+  .youtube_frame {
+    width: 90%;
+  }
+  .campus_inner span {
+    font-size: 14px;
+  }
+  .campus_inner h2 {
+    max-width: 340px;
+    font-size: 25px;
+  }
 }

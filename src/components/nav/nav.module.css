@@ -41,7 +41,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 90%;
+  width: 95%;
   padding: 15px 0px;
 }
 .nav_inner_right {
@@ -90,4 +90,100 @@
 }
 .black .nav_inner_left input::placeholder {
   color: black;
+}
+
+.hamburger {
+  display: none;
+}
+
+/* The side navigation menu */
+.sidenav {
+  height: 100%; /* 100% Full-height */
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 6; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: 0;
+  background-color: var(--darkgreen);
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 60px; /* Place content 60px from the top */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+  box-shadow: 5px -1px 17px -6px rgba(255, 255, 255, 0.325);
+}
+
+/* The navigation menu links */
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: white;
+  display: block;
+  text-wrap: nowrap;
+  transition: 0.3s;
+  margin-top: 15px;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+  position: absolute;
+  top: 50px;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.sidenav_inner {
+  display: flex;
+  align-items: center;
+  border: 1px solid white;
+  padding: 0px 10px;
+  margin: 30px;
+}
+.sidenav_inner input {
+  height: 30px;
+  width: 90%;
+  color: #f1f1f1;
+  background-color: transparent;
+  border: none;
+}
+.sidenav_inner input::placeholder {
+  color: #f1f1f1;
+}
+.sidenav_inner input:focus {
+  outline: none;
+}
+.sidenav ul {
+  margin: 30px 0px;
+}
+@media screen and (max-width: 1145px) {
+  .nav_inner_right ul {
+    display: none;
+  }
+  .nav_inner_left input,
+  .nav_inner_left .searchIcon {
+    display: none;
+  }
+  .hamburger {
+    display: block;
+  }
+  .nav_container {
+    background-color: var(--darkgreen);
+  }
+  .bottom_bar {
+    background: #8dc63f;
+    height: 8px;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .sidenav a {
+    font-size: 20px;
+    margin-top: 15px;
+  }
 }

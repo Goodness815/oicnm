@@ -5,13 +5,19 @@ import about2 from "../../../assets/aboutpage2.png";
 function AboutHero() {
   return (
     <div className={styles.about_container}>
-      <span>About us</span>
-      <h2>
+      <span data-aos="fade-up" data-aos-duration="1000">
+        About us
+      </span>
+      <h2 data-aos="fade-up" data-aos-duration="2000">
         Learn about our story, mission and values to excellence in medical
         education .
       </h2>
       <div className={styles.about_top}>
-        <div className={styles.about_left}>
+        <div
+          className={styles.about_left}
+          data-aos="fade-up"
+          data-aos-duration="2000"
+        >
           <span>OUR STORY</span>
           <h2>We’ve been in business since 2006.</h2>
           <p>
@@ -35,7 +41,11 @@ function AboutHero() {
             <img src={about2} alt="" />
           </div>
         </div>
-        <div className={styles.about_left}>
+        <div
+          className={styles.about_left}
+          data-aos="fade-up"
+          data-aos-duration="2000"
+        >
           <span>OUR mıssıon and vision</span>
           <h2>Shaping Healthcare Excellence for Tomorrow.</h2>
           <strong>Mission</strong>

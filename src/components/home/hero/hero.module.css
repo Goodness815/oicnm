@@ -68,14 +68,17 @@
   width: 90%;
   display: flex;
   align-items: center;
-  justify-content: center;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
   gap: 30px;
+  padding: 40px 0px;
 }
 .timer_item {
   display: flex;
   align-items: flex-start;
   justify-content: center;
   gap: 10px;
+  width: 220px;
 }
 .timer_icon_case {
   display: flex;
@@ -156,4 +159,65 @@
   border: none;
   margin-top: 20px;
   cursor: pointer;
+}
+
+@media screen and (max-width: 900px) {
+  .hero_container {
+    background: linear-gradient(
+        to left,
+        /* Fully transparent at the beginning */ rgba(0, 104, 55, 0.464) 28%,
+        /* Slight transition */ rgba(0, 104, 55, 0.655) 32%,
+        /* Slight transition */ rgba(0, 104, 55, 0.571) 100%
+          /* End of the color gradient */
+      ),
+      url("../../../assets/hero.png") center no-repeat;
+    min-height: 70vh;
+  }
+  .hero_inner {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+  }
+
+  .hero_inner span {
+    font-size: 15px;
+  }
+  .hero_inner h1 {
+    font-size: 40px;
+    max-width: 350px;
+    line-height: 45px;
+    margin: 20px 0px;
+    text-align: center;
+  }
+  .hero_inner p {
+    max-width: 350px;
+    text-align: center;
+  }
+  .timer_inner {
+    gap: 40px;
+  }
+  .timer_item {
+    width: 300px;
+  }
+  .hero_flex_inner {
+    justify-content: center;
+    padding: 60px 0px;
+  }
+  .hero_flex_right {
+    display: none;
+  }
+
+  .hero_flex_left {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .hero_flex_left h1 {
+    text-align: center;
+  }
 }

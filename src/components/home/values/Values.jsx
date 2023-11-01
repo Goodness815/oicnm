@@ -2,11 +2,24 @@ import { TimerIcon } from "../../../assets/svgs";
 import styles from "./values.module.css";
 
 function Values({ title, para, data }) {
- 
   return (
     <div className={styles.values_container}>
-      <h4>{title}</h4>
-      <h2>{para}</h2>
+      <h4
+        data-aos="fade-zoom-in"
+        data-aos-easing="ease-in-back"
+        data-aos-delay="300"
+        data-aos-offset="0"
+      >
+        {title}
+      </h4>
+      <h2
+        data-aos="fade-zoom-in"
+        data-aos-easing="ease-in-back"
+        data-aos-delay="300"
+        data-aos-offset="0"
+      >
+        {para}
+      </h2>
       <div className={styles.values_inner}>
         {data.map((item, i) => {
           return (

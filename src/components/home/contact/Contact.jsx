@@ -4,7 +4,7 @@ import styles from "./contact.module.css";
 function Contact() {
   return (
     <div className={styles.contact_container}>
-      <div className={styles.contact_inner}>
+      <div className={styles.contact_inner} data-aos="zoom-in">
         <span>Contact us</span>
         <h2>Get in Touch with Us Today!</h2>
         <div className={styles.contact_flex}>

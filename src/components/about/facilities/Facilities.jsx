@@ -10,7 +10,7 @@ function Facilities({ state }) {
         <>
           {" "}
           <h2>Facilities</h2>
-          <p>
+          <p data-aos="fade-up" data-aos-duration="2000">
             We pride ourselves on providing state-of-the-art facilities that
             empower our students, faculty, and researchers to excel in their
             pursuit of medical knowledge and healthcare excellence. Our
@@ -22,7 +22,7 @@ function Facilities({ state }) {
       )}
       {state ? (
         <div className={styles.facility_inner}>
-          <div className={styles.facility_item}>
+          <div data-aos="zoom-in" className={styles.facility_item}>
             <h4>Accreditation</h4>
             <p>
               To ease the transition to a new country and culture, OICNM offers
@@ -31,6 +31,7 @@ function Facilities({ state }) {
             </p>
           </div>
           <div
+            data-aos="zoom-in"
             className={`${styles.facility_item} ${styles.facility_item_right}`}
           >
             <h4>
@@ -43,7 +44,7 @@ function Facilities({ state }) {
               acclimate to the clinic environment and the local community.
             </p>
           </div>
-          <div className={styles.facility_item}>
+          <div data-aos="zoom-in" className={styles.facility_item}>
             <h4>
               Educational Membership with the World Naturopathic Federation
               (WNF)
@@ -55,6 +56,7 @@ function Facilities({ state }) {
             </p>
           </div>
           <div
+            data-aos="zoom-in"
             className={`${styles.facility_item} ${styles.facility_item_right}`}
           >
             <h4>
@@ -69,7 +71,7 @@ function Facilities({ state }) {
         </div>
       ) : (
         <div className={styles.facility_inner}>
-          <div className={styles.facility_item}>
+          <div data-aos="zoom-in" className={styles.facility_item}>
             <h4>Modern Classrooms</h4>
             <p>
               To ease the transition to a new country and culture, OICNM offers
@@ -78,6 +80,7 @@ function Facilities({ state }) {
             </p>
           </div>
           <div
+            data-aos="zoom-in"
             className={`${styles.facility_item} ${styles.facility_item_right}`}
           >
             <h4>Herbal Medicine Lab</h4>
@@ -87,7 +90,7 @@ function Facilities({ state }) {
               acclimate to the clinic environment and the local community.
             </p>
           </div>
-          <div className={styles.facility_item}>
+          <div data-aos="zoom-in" className={styles.facility_item}>
             <h4>Acupuncture Clinic</h4>
             <p>
               To ease the transition to a new country and culture, OICNM offers
@@ -96,6 +99,7 @@ function Facilities({ state }) {
             </p>
           </div>
           <div
+            data-aos="zoom-in"
             className={`${styles.facility_item} ${styles.facility_item_right}`}
           >
             <h4>Reproductive and Fertility Medicine Centre:</h4>
@@ -105,7 +109,7 @@ function Facilities({ state }) {
               acclimate to the clinic environment and the local community.
             </p>
           </div>
-          <div className={styles.facility_item}>
+          <div data-aos="zoom-in" className={styles.facility_item}>
             <h4>Library and Resource Centre</h4>
             <p>
               To ease the transition to a new country and culture, OICNM offers
@@ -114,6 +118,7 @@ function Facilities({ state }) {
             </p>
           </div>
           <div
+            data-aos="zoom-in"
             className={`${styles.facility_item} ${styles.facility_item_right}`}
           >
             <h4>Online Learning Platform</h4>
@@ -125,6 +130,7 @@ function Facilities({ state }) {
           </div>
           <div
             className={styles.facility_item}
+            data-aos="zoom-in"
             style={{
               width: "100%",
               display: "flex",
@@ -132,7 +138,7 @@ function Facilities({ state }) {
               alignItems: "flex-start",
             }}
           >
-            <div style={{ width: "50%" }}>
+            <div className={styles.facility_item_last} data-aos="zoom-in">
               <h4>Student Support Services</h4>
               <p>
                 To ease the transition to a new country and culture, OICNM
