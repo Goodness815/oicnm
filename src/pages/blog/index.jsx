@@ -7,62 +7,93 @@ import doctor from "../../assets/doctor.webp";
 import heart from "../../assets/heart.webp";
 import pills from "../../assets/pills.webp";
 
-function Blog() {
-  const blogItems = [
-    {
-      tag: "ADMISSION",
-      title: "Should you be tested post covid?",
-      img: doctor,
-    },
-    {
-      tag: "PERSONAL WELLNESS",
-      title: "Overeating? Mindfulness exercises can support",
-      img: heart,
-    },
-    {
-      tag: "PERSONAL WELLNESS",
-      title: "Can vitamin D supplements prevent health issues?",
-      img: pills,
-    },
-    {
-      tag: "PERSONAL WELLNESS",
-      title: "Can vitamin D supplements prevent health issues?",
-      img: pills,
-    },
-    {
-      tag: "ADMISSION",
-      title: "Should you be tested post covid?",
-      img: doctor,
-    },
-    {
-      tag: "PERSONAL WELLNESS",
-      title: "Overeating? Mindfulness exercises can support",
-      img: heart,
-    },
-    {
-      tag: "PERSONAL WELLNESS",
-      title: "Can vitamin D supplements prevent health issues?",
-      img: pills,
-    },
-    {
-      tag: "PERSONAL WELLNESS",
-      title: "Can vitamin D supplements prevent health issues?",
-      img: pills,
-    },
-  ];
+function Blog({ home }) {
+  const blogItems = home
+    ? [
+        {
+          tag: "ADMISSION",
+          title: "Should you be tested post covid?",
+          img: doctor,
+        },
+        {
+          tag: "PERSONAL WELLNESS",
+          title: "Overeating? Mindfulness exercises can support",
+          img: heart,
+        },
+        {
+          tag: "PERSONAL WELLNESS",
+          title: "Can vitamin D supplements prevent health issues?",
+          img: pills,
+        },
+      ]
+    : [
+        {
+          tag: "ADMISSION",
+          title: "Should you be tested post covid?",
+          img: doctor,
+        },
+        {
+          tag: "PERSONAL WELLNESS",
+          title: "Overeating? Mindfulness exercises can support",
+          img: heart,
+        },
+        {
+          tag: "PERSONAL WELLNESS",
+          title: "Can vitamin D supplements prevent health issues?",
+          img: pills,
+        },
+        {
+          tag: "PERSONAL WELLNESS",
+          title: "Can vitamin D supplements prevent health issues?",
+          img: pills,
+        },
+        {
+          tag: "ADMISSION",
+          title: "Should you be tested post covid?",
+          img: doctor,
+        },
+        {
+          tag: "PERSONAL WELLNESS",
+          title: "Overeating? Mindfulness exercises can support",
+          img: heart,
+        },
+        {
+          tag: "PERSONAL WELLNESS",
+          title: "Can vitamin D supplements prevent health issues?",
+          img: pills,
+        },
+        {
+          tag: "PERSONAL WELLNESS",
+          title: "Can vitamin D supplements prevent health issues?",
+          img: pills,
+        },
+      ];
 
   return (
     <div className={styles.blog_container}>
       <div className={styles.blog_inner}>
-        <div className={styles.blog_hero}>
+        <div className={styles.blog_hero} style={home && { maxWidth: "400px" }}>
           <h4>OUR BLOG</h4>
-          <h1>Our articles on health and personal wellness</h1>
+          <h1 style={home && { fontSize: "30px", lineHeight: "35px" }}>
+            Our articles on health and personal wellness
+          </h1>
         </div>
-        <div className={styles.blog_big_flex}>
-          <BlogItem />
-          <BlogItem />
-        </div>
-        <div className={styles.blog_small_flex}>
+        {!home && (
+          <div className={styles.blog_big_flex}>
+            <BlogItem />
+            <BlogItem />
+          </div>
+        )}
+        <div
+          style={
+            home && {
+              width: "80%",
+              justifyContent: "space-evenly",
+              margin: "10px 0px",
+            }
+          }
+          className={styles.blog_small_flex}
+        >
           {blogItems.map((item, i) => {
             return (
               <BlogItemSm

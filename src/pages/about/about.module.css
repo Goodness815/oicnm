@@ -1,0 +1,9 @@
+.hero {
+  min-height: 55vh;
+  width: 100%;
+  background: url("../../assets/about_hero.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  margin-top: 100px;
+}

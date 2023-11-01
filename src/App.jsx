@@ -5,6 +5,9 @@ import ScrollToTop from "./ScrollToTop";
 
 import "./App.css";
 import Blog from "./pages/blog";
+import Nav from "./components/nav";
+import Footer from "./components/footer/Footer";
+import About from "./pages/about";
 
 function App() {
   return (
@@ -12,8 +15,31 @@ function App() {
       <ScrollToTop />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/blog" element={<Blog />} />
-        <Route path="/:blogTitle" element={<BlogView />} />
+        <Route path="/about" element={<About />} />
+        <Route
+          path="/blog"
+          element={
+            <>
+              <Nav bg={true} />
+              <div style={{ paddingTop: "80px" }}>
+                <Blog />
+              </div>
+              <Footer />
+            </>
+          }
+        />
+        <Route
+          path="/:blogTitle"
+          element={
+            <>
+              <Nav bg={true} />
+              <div style={{ paddingTop: "80px" }}>
+                <BlogView />
+              </div>
+              <Footer />
+            </>
+          }
+        />
       </Routes>
     </>
   );

@@ -1,5 +1,7 @@
 import styles from "./features.module.css";
 import featuresimg from "../../../assets/featuresimg.png";
+import bottomleft from "../../../assets/bottomleft.png";
+import bottomright from "../../../assets/bottomright.png";
 import { TickIcon } from "../../../assets/svgs";
 function Features() {
   return (
@@ -64,7 +66,10 @@ function Features() {
           </ul>
           <button>Apply to a Program</button>
         </div>
-        <div className={styles.features_bottom_right}></div>
+        <div className={styles.features_bottom_right}>
+          <img className={styles.features_bottom_left_img} src={bottomleft} alt="" />
+          <img className={styles.features_bottom_right_img} src={bottomright} alt="" />
+        </div>
       </div>
     </div>
   );

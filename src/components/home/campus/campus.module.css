@@ -1,0 +1,35 @@
+.campus_container {
+  background: #f4f9ec;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 50px 0px;
+  width: 100%;
+}
+.campus_inner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.campus_inner span {
+  color: var(--darkgreen);
+  text-align: center;
+  font-family: var(--font);
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 32px; /* 200% */
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+}
+.campus_inner h2 {
+  text-align: center;
+  font-family: var(--font);
+  color: #002313;
+  max-width: 500px;
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 35px; /* 120% */
+  letter-spacing: -0.8px;
+  margin-top: 20px;
+}

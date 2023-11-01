@@ -16,6 +16,15 @@
   background: rgb(0, 104, 55);
 }
 
+.black {
+  color: black !important;
+  background-color: white !important;
+  box-shadow: -1px 11px 5px -5px rgba(0, 0, 0, 0.08);
+}
+.black .nav_inner_right ul li a {
+  color: black !important;
+}
+
 .top_bar {
   width: 100%;
   background: #f4f9ec;
@@ -70,9 +79,15 @@
   padding: 10px;
   color: white;
 }
+.black .nav_inner_left input {
+  color: black;
+}
 .nav_inner_left input:focus {
   outline: none;
 }
 .nav_inner_left input::placeholder {
   color: white;
+}
+.black .nav_inner_left input::placeholder {
+  color: black;
 }

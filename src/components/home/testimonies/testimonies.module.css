@@ -1,0 +1,96 @@
+.testimonies_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 50px 0px;
+}
+.testimonies_inner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 50px 0px;
+}
+.testimonies_inner span {
+  color: #8dc63f;
+  text-align: center;
+  font-family: var(--font);
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 32px; /* 200% */
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+}
+.testimonies_inner h2 {
+  color: #002313;
+  text-align: center;
+  font-family: var(--font);
+  font-size: 33px;
+  font-weight: 700;
+  line-height: 40px; /* 120% */
+  letter-spacing: -0.8px;
+  max-width: 700px;
+  margin: 10px 0px;
+}
+.reviews_main {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-evenly;
+  gap: 40px;
+  width: 100%;
+  padding-top: 100px;
+  padding-bottom: 50px;
+}
+.reviews_left {
+  width: 420px;
+}
+.reviews_img_container {
+  width: 200px;
+  height: 400px;
+  position: relative;
+  background-color: var(--darkgreen);
+}
+.reviews_img_container img {
+  width: 350px;
+  height: 400px;
+  position: absolute;
+  object-fit: cover;
+  object-position: center;
+  bottom: -40px;
+  right: -200px;
+}
+.reviews_right {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 400px;
+}
+.reviews_right p {
+  color: #102226;
+  font-family: var(--font);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 30px; /* 222.222% */
+  letter-spacing: -0.4px;
+  margin: 20px 0px;
+}
+.review_author {
+  margin-top: 40px;
+}
+.review_author h3 {
+  color: #020e27;
+  font-family: var(--font);
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 32px; /* 177.778% */
+  letter-spacing: -0.7px;
+}
+.review_author span {
+  color: #020e27;
+  font-family: var(--font);
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 20px; /* 177.778% */
+  letter-spacing: -0.7px;
+}

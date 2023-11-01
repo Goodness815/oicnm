@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from "react";
 import styles from "./nav.module.css";
-import { Logo, MailIcon, SearchIcon } from "../../assets/svgs";
+import { BlackLogo, Logo, MailIcon, SearchIcon } from "../../assets/svgs";
 import { Link } from "react-router-dom";
 
-function Nav() {
+function Nav({ bg, about }) {
   const [scrolling, setScrolling] = useState(false);
 
   useEffect(() => {
@@ -28,7 +28,8 @@ function Nav() {
       <div
         className={`${scrolling ? `${styles.nav_scrolled}` : ""} ${
           styles.nav_container
-        }`}
+        } ${about ? `${styles.black}` : ""}`}
+        style={bg ? { backgroundColor: "rgb(0, 104, 55)" } : {}}
       >
         <div className={styles.top_bar}>
           <MailIcon />{" "}
@@ -36,13 +37,13 @@ function Nav() {
         </div>
         <div className={styles.nav_inner}>
           <div className={styles.nav_inner_right}>
-            <Logo />
+            {about ? <BlackLogo /> : <Logo />}
             <ul>
               <li>
-                <Link to="">Home</Link>
+                <Link to="/">Home</Link>
               </li>
               <li>
-                <Link to="">About Us</Link>
+                <Link to="/about">About Us</Link>
               </li>
               <li>
                 <Link to="">Programmes</Link>

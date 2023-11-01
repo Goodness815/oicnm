@@ -1,0 +1,100 @@
+.about_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 50px 0px;
+}
+.about_container span {
+  color: var(--lightgreen);
+  text-align: center;
+  font-family: var(--font);
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px; /* 150% */
+  letter-spacing: 0.64px;
+  text-transform: uppercase;
+}
+.about_container h2 {
+  color: #002313;
+  text-align: center;
+  font-family: var(--font);
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 40px;
+  max-width: 750px;
+  margin-top: 10px;
+}
+.about_top {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 80%;
+  row-gap: 20px;
+  column-gap: 0px;
+  padding: 80px 0px;
+}
+.about_right {
+  width: 400px;
+}
+.about_img_case {
+  width: 200px;
+  height: 360px;
+  background-color: var(--darkgreen);
+  position: relative;
+}
+.about_img_case img {
+  position: absolute;
+  width: 350px;
+  height: 360px;
+  bottom: -30px;
+  right: -200px;
+  object-fit: cover;
+}
+.about_left {
+  max-width: 380px;
+}
+.about_left span {
+  color: var(--lightgreen);
+  font-family: var(--font);
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 24px; /* 171.429% */
+  letter-spacing: 0.84px;
+  text-transform: uppercase;
+}
+.about_left h2 {
+  color: #002313;
+  font-family: var(--font);
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 38.4px; /* 120% */
+  letter-spacing: -0.64px;
+  margin: 10px 0px;
+  text-align: left;
+}
+.about_left p {
+  color: #364259;
+  font-family: var(--font);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 28px; /* 177.778% */
+  letter-spacing: -0.36px;
+  margin-bottom: 10px;
+}
+.about_left strong {
+  color: var(--darkgreen);
+  font-family: var(--font);
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 32px; /* 177.778% */
+  letter-spacing: -0.36px;
+  margin: 10px 0px;
+}
+.about_bottom .about_left h2 {
+  max-width: 400px;
+}
+.about_bottom .about_left {
+  max-width: 550px;
+}

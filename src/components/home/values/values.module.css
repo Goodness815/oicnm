@@ -16,11 +16,11 @@
 .values_container h2 {
   font-family: var(--font);
   color: #002313;
-  font-size: 22px;
+  font-size: 30px;
   font-weight: 700;
   line-height: 33px; /* 150% */
   letter-spacing: -0.8px;
-  max-width: 300px;
+  max-width: 400px;
   text-align: center;
   margin-top: 8px;
 }

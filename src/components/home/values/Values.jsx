@@ -1,21 +1,23 @@
 import { TimerIcon } from "../../../assets/svgs";
 import styles from "./values.module.css";
 
-function Values() {
+function Values({ title, para, data }) {
+ 
   return (
     <div className={styles.values_container}>
-      <h4>CORE VALUES</h4>
-      <h2>Nurturing Excellence, Compassion, and Integrity</h2>
+      <h4>{title}</h4>
+      <h2>{para}</h2>
       <div className={styles.values_inner}>
-        <div className={styles.values_inner_item}>
-          <TimerIcon fill={true} />
-          <h2>Integrity & Ethics</h2>
-          <p>
-            At our medical college, Integrity and Ethics form the cornerstone of
-            our education.
-          </p>
-        </div>
-        <div className={styles.values_inner_item}>
+        {data.map((item, i) => {
+          return (
+            <div key={i} className={styles.values_inner_item}>
+              <TimerIcon fill={true} />
+              <h2>{item.title}</h2>
+              <p>{item.para}</p>
+            </div>
+          );
+        })}
+        {/* <div className={styles.values_inner_item}>
           <TimerIcon fill={true} />
           <h2>Holistic Approach</h2>
           <p>
@@ -42,7 +44,7 @@ function Values() {
             Innovation and Integration are the driving forces at our medical
             college.
           </p>
-        </div>
+        </div> */}
       </div>
     </div>
   );
