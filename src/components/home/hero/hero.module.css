@@ -171,7 +171,8 @@
           /* End of the color gradient */
       ),
       url("../../../assets/hero.png") center no-repeat;
-    min-height: 70vh;
+    min-height: 80vh;
+    height: 80vh;
   }
   .hero_inner {
     width: 80%;
@@ -219,5 +220,11 @@
   }
   .hero_flex_left h1 {
     text-align: center;
+  }
+}
+@media screen and (max-height: 600px) {
+  .hero_container {
+    min-height: 100vh;
+    height: 100vh;
   }
 }

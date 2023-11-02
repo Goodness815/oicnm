@@ -68,18 +68,22 @@
   letter-spacing: -0.24px;
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1100px) {
   .footer_top {
-    flex-wrap: wrap;
+    width: 100%;
   }
-  .footer_top ul {
-    margin-top: 20px;
+  .footer_top_left {
+    max-width: 400px;
   }
 }
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 870px) {
   .footer_top {
     flex-wrap: wrap;
     flex-direction: column;
+    width: 90%;
+  }
+  .footer_top_left {
+    max-width: 100%;
   }
   .footer_top ul {
     width: 100%;
@@ -87,5 +91,10 @@
   }
   .footer_bottom span {
     text-align: center;
+  }
+  .footer_bottom span {
+    font-size: 12px;
+    line-height: 17px;
+    letter-spacing: -0.20px;
   }
 }

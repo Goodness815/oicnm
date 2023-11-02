@@ -8,6 +8,8 @@ import {
 import styles from "./footer.module.css";
 
 function Footer() {
+  const currentYear = new Date().getFullYear();
+
   return (
     <div className={styles.footer_container}>
       <div className={styles.footer_top}>
@@ -53,8 +55,8 @@ function Footer() {
       </div>
       <div className={styles.footer_bottom}>
         <span>
-          Copyright © 2023 Open International College of Naturopathic Medicine.
-          All rights reserved.
+          Copyright © {currentYear} Open International College of Naturopathic
+          Medicine. All rights reserved.
         </span>
       </div>
     </div>
