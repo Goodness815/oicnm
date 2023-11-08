@@ -11,6 +11,7 @@ import About from "./pages/about";
 
 import AOS from 'aos';
 import 'aos/dist/aos.css'; // You can also use <link> for styles
+import ScrollToTopButton from "./components/scrollToTopButton/ScrollToTopButton";
 // ..
 AOS.init();
 
@@ -18,6 +19,7 @@ function App() {
   return (
     <>
       <ScrollToTop />
+      <ScrollToTopButton />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />

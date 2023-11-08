@@ -94,6 +94,23 @@
   line-height: 20px; /* 177.778% */
   letter-spacing: -0.7px;
 }
+.review_button_flex {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-self: flex-end;
+}
+.review_button_flex button {
+  background-color: transparent;
+  border: none;
+  border: 1px solid #8dc63f;
+  color: black;
+  padding: 8px 15px;
+  cursor: pointer;
+  font-size: small;
+  margin: 0px 10px;
+}
 @media screen and (max-width: 900px) {
   .reviews_left {
     width: 350px;

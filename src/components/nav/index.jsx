@@ -1,7 +1,10 @@
 import React, { useEffect, useState } from "react";
 import styles from "./nav.module.css";
 import {
+  ArrowDown,
+  BlackArrowDown,
   BlackLogo,
+  BlackSearchIcon,
   CloseIcon,
   HamburgerIcon,
   Logo,
@@ -13,17 +16,20 @@ import { Link } from "react-router-dom";
 function Nav({ bg, about }) {
   const [scrolling, setScrolling] = useState(false);
   const [navState, setNavState] = useState(false);
+  const [showAdmissionMenu, setShowAdmissionMenu] = useState(false);
 
-  /* Set the width of the side navigation to 250px */
   function openNav() {
     document.getElementById("mySidenav").style.width = "270px";
     setNavState(!navState);
   }
 
-  /* Set the width of the side navigation to 0 */
   function closeNav() {
     document.getElementById("mySidenav").style.width = "0";
     setNavState(!navState);
+  }
+
+  function toggleAdmissionMenu() {
+    setShowAdmissionMenu(!showAdmissionMenu);
   }
 
   useEffect(() => {
@@ -37,7 +43,6 @@ function Nav({ bg, about }) {
 
     window.addEventListener("scroll", handleScroll);
 
-    // Clean up the event listener when the component unmounts
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
@@ -71,8 +76,25 @@ function Nav({ bg, about }) {
               <li>
                 <Link to="">Alumni</Link>
               </li>
-              <li>
-                <Link to="">Admission</Link>
+              <li
+                onMouseEnter={toggleAdmissionMenu}
+                onMouseLeave={toggleAdmissionMenu}
+                className={styles.admissionMenu_main}
+              >
+                <Link to="">
+                  Admission{" "}
+                  {about ? (
+                    <BlackArrowDown className={styles.arrowDown} />
+                  ) : (
+                    <ArrowDown className={styles.arrowDown} />
+                  )}
+                </Link>
+                {showAdmissionMenu && (
+                  <ul className={styles.admissionSubMenu}>
+                    <li>Application Procedure</li>
+                    <li>Scholarship and Financial Aids</li>
+                  </ul>
+                )}
               </li>
               <li>
                 <Link to="">Career</Link>
@@ -83,9 +105,12 @@ function Nav({ bg, about }) {
             </ul>
           </div>
           <div className={styles.nav_inner_left}>
-            <SearchIcon className={styles.searchIcon} />
+            {about ? (
+              <BlackSearchIcon className={styles.searchIcon} />
+            ) : (
+              <SearchIcon className={styles.searchIcon} />
+            )}
             <input type="text" placeholder="Search" />
-
             {navState ? (
               <CloseIcon
                 className={styles.closebtn}

@@ -75,6 +75,29 @@
   font-family: var(--font);
   font-size: 50px;
   font-weight: 600;
+  position: relative;
+  z-index: 2;
+}
+.newsletter_item img {
+  position: absolute;
+  width: 60px;
+  top: -10px;
+  left: 0px;
+  z-index: -1;
+}
+.img1 {
+  left: -10px !important;
+}
+.img2 {
+  top: -10px !important;
+  left: 20px !important;
+  width: 50px !important;
+}
+.img3 {
+  left: 30px !important;
+}
+.img4 {
+  left: 20px !important;
 }
 .newsletter_item span {
   color: #fff;
@@ -83,7 +106,9 @@
   line-height: 20.6px; /* 160% */
   letter-spacing: 0.3px;
   text-transform: uppercase;
+  z-index: 10;
 }
+
 @media screen and (max-width: 900px) {
   .newsletter_left {
     width: 40%;

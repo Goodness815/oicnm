@@ -36,6 +36,11 @@ function Testimonies() {
               <h3>HAJARAT MOTUNRAYO MUHAMMAD</h3>
               <span>South Yorkshire, United Kingdom</span>
             </div>
+
+            <div className={styles.review_button_flex}>
+              <button>{"<"}</button>
+              <button>{">"}</button>
+            </div>
           </div>
         </div>
       </div>
