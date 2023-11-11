@@ -110,6 +110,12 @@
   cursor: pointer;
   font-size: small;
   margin: 0px 10px;
+  transition: 0.5s ease;
+}
+.review_button_flex button:hover {
+  background-color: #8dc63f;
+  border: 1px solid #8dc63f;
+  color: white;
 }
 @media screen and (max-width: 900px) {
   .reviews_left {

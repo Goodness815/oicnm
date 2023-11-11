@@ -16,6 +16,7 @@ import { Link } from "react-router-dom";
 function Nav({ bg, about }) {
   const [scrolling, setScrolling] = useState(false);
   const [navState, setNavState] = useState(false);
+  const [dropdown, setDropdown] = useState(false);
   const [showAdmissionMenu, setShowAdmissionMenu] = useState(false);
 
   function openNav() {
@@ -30,6 +31,9 @@ function Nav({ bg, about }) {
 
   function toggleAdmissionMenu() {
     setShowAdmissionMenu(!showAdmissionMenu);
+  }
+  function toggleDropdown() {
+    setDropdown(!dropdown);
   }
 
   useEffect(() => {
@@ -129,7 +133,7 @@ function Nav({ bg, about }) {
         <div className={styles.bottom_bar}></div>
       </div>
 
-      <div id="mySidenav" class={styles.sidenav}>
+      <div id="mySidenav" className={styles.sidenav}>
         <div style={{ marginLeft: "10px" }}>
           <Logo />
         </div>
@@ -147,8 +151,20 @@ function Nav({ bg, about }) {
             <Link to="">Alumni</Link>
           </li>
           <li>
-            <Link to="">Admission</Link>
+            <Link to="#" onClick={toggleDropdown}>
+              Admission <ArrowDown className={styles.arrowDown} />
+            </Link>
           </li>
+          {dropdown && (
+            <>
+              <li>
+                <Link to="">Application Procedure</Link>
+              </li>
+              <li>
+                <Link to="">Scholarship and Financial Aids</Link>
+              </li>
+            </>
+          )}
           <li>
             <Link to="">Career</Link>
           </li>
